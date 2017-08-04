@@ -64,6 +64,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
+        switch (item.getItemId()) {
+            case R.id.information  :
+                Intent intent = new Intent(MainActivity.this, VideoViewerActivity.class);
+                startActivity(intent);
+
+                break;
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
