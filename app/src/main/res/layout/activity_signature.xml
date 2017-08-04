@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_5"
+    tools:context="com.mist.it.pod_nk.SignatureActivity">
+
+    <LinearLayout
+        android:id="@+id/linSATop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:background="@color/Cornsilk2"
+        android:orientation="vertical"
+        android:padding="@dimen/micro_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/nano_margin"
+            android:text="@string/Receiver"
+            android:textSize="@dimen/text_h2"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edtSAFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/nano_margin"
+            android:ems="10"
+            android:hint="@string/NameAndSurname"
+            android:inputType="textPersonName"
+            android:textSize="@dimen/text_nm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linSACanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linSAButtom"
+        android:layout_below="@+id/linSATop"
+        android:layout_margin="@dimen/margin"
+        android:background="@android:color/background_light"
+        android:orientation="vertical" />
+
+    <LinearLayout
+        android:id="@+id/linSAButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSASave"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/mini_margin"
+            android:layout_weight="1"
+            android:background="@drawable/blue_button"
+            android:drawableLeft="@android:drawable/ic_menu_save"
+            android:drawableStart="@android:drawable/ic_menu_save"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/Save"
+            android:textSize="@dimen/text_h3"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSAClear"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_margin="@dimen/mini_margin"
+            android:layout_weight="1"
+            android:background="@drawable/salmon_button"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:drawableStart="@android:drawable/ic_delete"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:text="@string/Clear"
+            android:textSize="@dimen/text_h3"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

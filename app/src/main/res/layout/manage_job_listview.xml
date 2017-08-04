@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linMJLItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_notclick"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linMJLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/MistyRose"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mini_margin">
+
+        <TextView
+            android:id="@+id/txtMJLStore"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picture_width"
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:maxLines="3"
+            android:text="@string/Store"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtMJLTime"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/picture_width"
+            android:layout_weight="1"
+            android:background="@drawable/round_text1"
+            android:gravity="center"
+            android:text="@string/Time"
+            android:textColor="@color/WhiteSmoke"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lisMJLJobNo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:nestedScrollingEnabled="true" />
+</LinearLayout>

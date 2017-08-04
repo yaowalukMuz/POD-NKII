@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/Information"
+        android:id="@+id/information"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_help_white_24dp"
+        />
+
+    <item android:title="@string/Refresh"
+        android:id="@+id/refresh"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/refresh"
+        />
+
+    <item android:title="@string/logout"
+        android:id="@+id/logout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_settings_power_white"
+        />
+</menu>

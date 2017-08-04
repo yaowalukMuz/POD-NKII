@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_5"
+    tools:context="com.mist.it.pod_nk.ManageJobActivity">
+
+    <LinearLayout
+        android:id="@+id/linMJATop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/Cornsilk2"
+        android:orientation="vertical"
+        android:padding="@dimen/mini_margin">
+
+        <TextView
+            android:id="@+id/txtMJAJobNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mini_margin"
+            android:text="@string/JobNo"
+            android:textSize="@dimen/text_h2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lisMJAStore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linMJABottom"
+        android:layout_below="@+id/linMJATop"
+        android:layout_margin="@dimen/margin"
+        android:nestedScrollingEnabled="true"
+        android:padding="@dimen/mini_margin" />
+
+    <LinearLayout
+        android:id="@+id/linMJABottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/micro_margin"
+            android:layout_marginEnd="@dimen/micro_margin"
+            android:layout_marginLeft="@dimen/micro_margin"
+            android:layout_marginRight="@dimen/micro_margin"
+            android:layout_marginStart="@dimen/micro_margin"
+            android:background="@color/Cornsilk2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/mini_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/StartTime"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtMJAStartTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/Crimson"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/mini_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Mile"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtMJAStartMiles"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/Crimson"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/mini_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/StopTime"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtMJAStopTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/Crimson"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/mini_margin">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Mile"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtMJAStopMiles"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/Crimson"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/micro_margin"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMJAStart"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="2.93"
+                android:background="@drawable/green_button"
+                android:text="@string/Start"
+                android:textSize="@dimen/text_h3"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="1"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnMJAStop"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="2.86"
+                android:background="@drawable/salmon_button"
+                android:text="@string/Stop"
+                android:textSize="@dimen/text_h3"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

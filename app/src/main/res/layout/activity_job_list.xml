@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_5"
+    tools:context="com.mist.it.pod_nk.JobListActivity">
+
+    <LinearLayout
+        android:id="@+id/linJLATopPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/Bisque2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/mini_margin">
+
+        <TextView
+            android:id="@+id/txtJLANameSurN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/mini_margin"
+            android:layout_marginRight="@dimen/mini_margin"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:layout_marginTop="@dimen/mini_margin"
+            android:gravity="center"
+            android:padding="@dimen/micro_margin"
+            android:text="@string/NameAndSurname"
+            android:textColor="@color/Black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtJLATruckLicense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/mini_margin"
+            android:layout_marginRight="@dimen/mini_margin"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:layout_marginTop="@dimen/mini_margin"
+            android:gravity="center"
+            android:padding="@dimen/micro_margin"
+            android:text="@string/TruckLicense"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnJLADate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mini_margin"
+            android:layout_marginLeft="@dimen/mini_margin"
+            android:layout_marginRight="@dimen/mini_margin"
+            android:layout_marginStart="@dimen/mini_margin"
+            android:layout_marginTop="@dimen/mini_margin"
+            android:background="@drawable/silver_button"
+            android:gravity="center"
+            android:padding="@dimen/micro_margin"
+            android:text="@string/Date"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lisJLATrip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linJLATopPanel"
+        android:layout_marginBottom="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:nestedScrollingEnabled="true" />
+
+</RelativeLayout>

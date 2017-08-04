@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSODHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mini_margin"
+        android:gravity="center"
+        android:padding="@dimen/mini_margin"
+        android:text="@string/Header"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edtSODNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:ems="10"
+        android:hint="@string/ODOHint"
+        android:inputType="numberSigned"
+        android:padding="@dimen/mini_margin"
+        android:textColor="@color/GhostWhite"
+        android:textColorHint="@color/FloralWhite"
+        android:textSize="30sp" />
+
+</LinearLayout>

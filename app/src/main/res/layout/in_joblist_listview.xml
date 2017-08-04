@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_notclick"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtIJLLPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nano_margin"
+        android:layout_weight="3"
+        android:maxLines="4"
+        android:padding="@dimen/micro_margin"
+        android:text="@string/Place"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtIJLLTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/nano_margin"
+        android:layout_weight="1"
+        android:padding="@dimen/micro_margin"
+        android:text="@string/Time"
+        android:textSize="18sp" />
+
+</LinearLayout>

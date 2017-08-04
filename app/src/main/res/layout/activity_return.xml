@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_5"
+    tools:context="com.mist.it.pod_nk.ReturnActivity">
+
+    <LinearLayout
+        android:id="@+id/linRATop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/mini_margin"
+        android:background="@color/Cornsilk2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtRAInvoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/mini_margin"
+            android:text="@string/InvoiceNo"
+            android:textColor="@color/MediumBlue"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lisRAItemList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linRABottom"
+        android:layout_below="@+id/linRATop"
+        android:layout_margin="@dimen/mini_margin"
+        android:background="@color/Cornsilk2" />
+
+    <LinearLayout
+        android:id="@+id/linRABottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/mini_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgRAOne"
+                android:layout_width="@dimen/picture_width"
+                android:layout_height="@dimen/picture_height"
+                android:layout_margin="@dimen/mini_margin"
+                app:srcCompat="@drawable/camera" />
+
+            <ImageView
+                android:id="@+id/imgRATwo"
+                android:layout_width="@dimen/picture_width"
+                android:layout_height="@dimen/picture_height"
+                android:layout_margin="@dimen/mini_margin"
+                app:srcCompat="@drawable/camera" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRASave"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="1"
+                android:background="@drawable/plum_button"
+                android:text="@string/SavePicture"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRAReturnAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button"
+                android:text="@string/ReturnAll"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnRAConfirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_margin="@dimen/mini_margin"
+                android:layout_weight="1"
+                android:background="@drawable/green_button"
+                android:text="@string/Finish"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

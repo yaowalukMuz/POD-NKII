@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_notclick"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtJLLRound"
+        android:layout_width="@dimen/picture_height"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="@dimen/mini_margin"
+        android:layout_marginLeft="@dimen/mini_margin"
+        android:layout_marginRight="@dimen/mini_margin"
+        android:layout_marginStart="@dimen/mini_margin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/header_click"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/mini_margin"
+        android:paddingBottom="25dp"
+        android:paddingTop="25dp"
+        android:text="@string/Number"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ListView
+        android:id="@+id/linJLLInJobListView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_marginBottom="@dimen/mini_margin"
+        android:layout_marginEnd="@dimen/mini_margin"
+        android:layout_marginRight="@dimen/mini_margin"
+        android:layout_marginTop="@dimen/mini_margin"
+        android:nestedScrollingEnabled="true"
+        android:padding="@dimen/mini_margin" />
+</LinearLayout>

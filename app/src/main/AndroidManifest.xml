@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mist.it.pod_nk">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/htsapp"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JobListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ManageJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ReturnActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cb5d4c3d49eea37d1668dc88f85df56d9d55bcce" />
+    </application>
+
+</manifest>

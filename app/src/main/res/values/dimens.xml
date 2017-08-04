@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_h1">32sp</dimen>
+    <dimen name="mini_margin">5dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="text_h2">24dp</dimen>
+    <dimen name="text_h3">18dp</dimen>
+    <dimen name="text_nm">14dp</dimen>
+    <dimen name="picture_width">57dp</dimen>
+    <dimen name="picture_height">94dp</dimen>
+    <dimen name="micro_margin">3dp</dimen>
+    <dimen name="nano_margin">2dp</dimen>
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="button_height">42dp</dimen>
+    <dimen name="textview_width">200dp</dimen>
+    <dimen name="text_h2_height">30dp</dimen>
+</resources>
